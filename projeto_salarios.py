@@ -84,7 +84,7 @@ def calculos(lista_salario: list):
         aliqinss = aliquota_inss(salbruto)
         deducaoinss = deducao_inss(salbruto)
         valinss = (salbruto * aliqinss) - deducaoinss
-        if valinss<0:
+        if valinss == -951.62:
             valinss *= -1
         aliqir = aliquota_ir(salbruto-valinss)
         deducaoir = deducao_ir(salbruto-valinss)
